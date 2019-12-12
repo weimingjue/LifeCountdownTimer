@@ -5,3 +5,9 @@
 
 demo滑动卡顿是本人比较懒直接调用的notifyDataSetChanged，如介意请自行优化
 
+
+导入方式：
+
+    implementation 'com.github.weimingjue:CountdownUtil:1.02'
+
+博客介绍：https://blog.csdn.net/weimingjue/article/details/103459687
