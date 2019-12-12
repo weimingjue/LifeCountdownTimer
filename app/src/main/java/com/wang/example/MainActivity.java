@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
                     mIsRequestLayout = false;
                 } else {
                     //已经结束
-                    setText("剩余：00:00:00.0");
+                    setText("剩余：00:00:00.00");
                     mDjs.removeTimeListener(mTimeListener);
                     if (mListener != null) mListener.onEnd();
                     mIsRequestLayout = true;
