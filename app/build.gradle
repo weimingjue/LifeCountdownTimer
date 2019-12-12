@@ -1,0 +1,22 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.wang.example"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.android.support:appcompat-v7:27.0.2'
+    api 'com.android.support:recyclerview-v7:27.0.2'
+    implementation 'com.github.weimingjue:BaseAdapter:1.06'
+    implementation 'com.android.support:design:27.1.1'
+    api project(':daojishi')
+}
