@@ -1,13 +1,11 @@
 *.iml
-*.bat
 *.apk
 *.zip
-*.properties
+local.properties
+*.hprof
 /captures
 ~$*
-gradlew
 .DS_Store
 .idea
 .gradle
-gradle
 build
