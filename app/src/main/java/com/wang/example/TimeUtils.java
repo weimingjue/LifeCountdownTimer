@@ -1,6 +1,6 @@
 package com.wang.example;
 
-import android.support.annotation.Size;
+import androidx.annotation.Size;
 
 public class TimeUtils {
     //天时分秒毫秒的倍数

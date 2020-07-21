@@ -1,14 +1,16 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 28
+
     defaultConfig {
-        applicationId "com.wang.example"
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     compileOptions {
@@ -18,10 +20,6 @@ android {
 }
 
 dependencies {
-    api fileTree(include: ['*.jar'], dir: 'libs')
-    api 'androidx.appcompat:appcompat:1.1.0'
-    api 'androidx.recyclerview:recyclerview:1.1.0'
-    implementation 'com.github.weimingjue:BaseAdapter:2.05'
-    implementation 'com.google.android.material:material:1.1.0'
-    api project(':countdown')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
 }
